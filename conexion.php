@@ -5,7 +5,7 @@ function conectar(){
     $pass = "root";
     $bd = "proyectophp";
     $conn = mysqli_connect($host, $user, $pass, $bd);
-    msqli_select_db($conn, $bd);
+    mysqli_select_db($conn, $bd);
     return $conn;
 }
 ?>
