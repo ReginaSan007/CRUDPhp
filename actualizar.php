@@ -13,7 +13,7 @@ $alumno = mysqli_fetch_array($query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto PHP - Update</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
     <div class="container mt-2">
@@ -22,7 +22,7 @@ $alumno = mysqli_fetch_array($query);
         </div>
             <from action="update.php" method="post">
                 <input type="text" name="cod_estudiante" value="<?php echo $alumno['cod_estudiante'] ?>" hidden>
-                <input type="text" name="ine" clase="form-control mb-3" value="<?php echo $_GETalumno['ine'] ?>" placeholder = "Escribe tu INE">
+                <input type="text" name="ine" clase="form-control mb-3" value="<?php echo $alumno['ine'] ?>" placeholder = "Escribe tu INE">
                 <input type="text" name="nombre" clase="form-control mb-3" value="<?php echo $alumno['nombre'] ?>" placeholder = "Escribe tu Nombre"> 
                 <input type="text" name="apelidos" clase="form-control mb-3" value="<?php echo $alumno['apellidos'] ?>" placeholder = "Escribe tus Apellidos">  
                 <input type="submit" value="Actualizar" class="btn btn-primary btn-block">

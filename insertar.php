@@ -5,7 +5,7 @@ $ine = $_POST['ine'];
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
 
-$SQL = "INSERT INTO alumnos VALUES (null, '$ine', '$nombre', '$apellidos')";
+$sql = "INSERT INTO alumnos VALUES (null, '$ine', '$nombre', '$apellidos')";
 $query = mysqli_query($conn, $sql);
 
 if($query){
